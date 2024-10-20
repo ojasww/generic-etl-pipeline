@@ -1,0 +1,30 @@
+{
+    "google": {
+        "id": "id",
+        "displayName": "display_name",
+        "firstName": "first_name",
+        "lastName": "last_name",
+        "email": "email_address",
+        "phone": "phone_number",
+        "address": "address",
+        "address.street": "street_address",
+        "address.city": "city_name",
+        "address.state": "state_code",
+        "address.zipCode": "postal_code",
+        "isVerified": "is_verified"
+    },
+    "okta": {
+        "user_id": "id",
+        "displayLabel": "display_name",
+        "givenName": "first_name",
+        "familyName": "last_name",
+        "emailAddr": "email_address",
+        "contactNumber": "phone_number",
+        "location": "location",
+        "location.streetLine": "street_address",
+        "location.cityTown": "city_name",
+        "location.stateRegion": "state_code",
+        "location.zipPostal": "postal_code",
+        "verifiedStatus": "is_verified"
+    }
+}

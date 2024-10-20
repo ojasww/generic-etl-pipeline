@@ -1,0 +1,19 @@
+{
+  "city_name": "San Francisco",
+  "display_name": "JaneDoeOKTA",
+  "email_address": "jane.doe@okta.com",
+  "first_name": "Jane",
+  "id": "12345",
+  "is_verified": true,
+  "last_name": "Doe",
+  "location": {
+    "cityTown": "San Francisco",
+    "stateRegion": "CA",
+    "streetLine": "789 Oak St",
+    "zipPostal": "94107"
+  },
+  "phone_number": "555-987-6543",
+  "postal_code": "94107",
+  "state_code": "CA",
+  "street_address": "789 Oak St"
+}

@@ -1,0 +1,13 @@
+{
+    "id": "id",
+    "displayName": "display_name",
+    "firstName": "first_name",
+    "lastName": "last_name",
+    "email": "email_address",
+    "phone": "phone_number",
+    "address.street": "address.street_address",
+    "address.city": "address.city_name",
+    "address.state": "address.state_code",
+    "address.zipCode": "address.postal_code",
+    "isVerified": "is_verified"
+}

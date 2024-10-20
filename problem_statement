@@ -1,0 +1,51 @@
+We are building an application that consumes data from different providers. These providers provide data in different JSON formats and our goal is to map them to a standard schema and generate output JSON files.
+
+The goal of this exercise is to build an utility that takes these data files and generates JSON objects confirming to below rules:
+
+    The output JSON object should conform to a schema
+    Mandatory & Optional fields need to be validated
+    Transform input fields to target schema fields based on mapping configuration
+
+Code Structure Explanation:
+
+Input Files:
+
+We have different types of JSON source data files under sample_data/input_files/ folder and these input files to the utility.
+
+    The file name of the source data file will have the keyword of the target schema to use. The input file format would be: {provider}_{target_schema}_<extra_keywords_if_any>.json. For example google_user.json, google_user_optional.json - all these files should conform to user schema present in schema/user.json file.
+
+Output Files:
+
+    We want to implement a solution that transforms these data files to a target JSON object (see examples in sample_data/output_files/ folder).
+    The output data file should conform to the target schema which are stored in schema folder.
+    The output data file should not contain the field optional - that is only to be used for validation of the input files.
+
+Schema:
+
+    The output data file should conform to the target schema which are stored in schema folder.
+    The schema files will always contain an optional field having list of all the fields (top level) which are optional. Every other field should be assumed as required and handled properly with exceptions if not provided in the source data file.
+
+Mapping:
+
+A mapping.json is provided with the format:
+
+{
+  "<schema_name>": {
+    "<provider_name>": {
+      "<input_field_name>": "<corresponding_schema_field_name>"
+    }
+  }
+}
+
+This should be used in transforming the input source data files to conform to the output schema. Note that there can be cases where there is no mapping required for a schema + provider.
+
+Transformer:
+
+This is the utility that you would be building. You are supposed to implement the following method in json.go file, that takes the input file path as an argument and returns the expected JSON object as a dictionary.
+
+func (st *SchemaTransformer) BuildFromJSON(jsonFilePath string) (jsonObj map[string]interface{}, err error) {
+
+	return jsonObj, nil
+}
+
+Tip: Keep the program as generic as possible so that new schema or data file addition doesn't need a code change.

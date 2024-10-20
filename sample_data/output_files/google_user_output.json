@@ -1,0 +1,19 @@
+{
+  "address": {
+    "city": "New York",
+    "state": "NY",
+    "street": "123 Main St",
+    "zipCode": "10001"
+  },
+  "city_name": "New York",
+  "display_name": "JohnDoe",
+  "email_address": "johndoe@example.com",
+  "first_name": "John",
+  "id": 1,
+  "is_verified": true,
+  "last_name": "Doe",
+  "phone_number": "123-456-7890",
+  "postal_code": "10001",
+  "state_code": "NY",
+  "street_address": "123 Main St"
+}

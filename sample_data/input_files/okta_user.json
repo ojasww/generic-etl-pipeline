@@ -1,0 +1,15 @@
+{
+    "user_id": "12345",
+    "displayLabel": "JaneDoeOKTA",
+    "givenName": "Jane",
+    "familyName": "Doe",
+    "emailAddr": "jane.doe@okta.com",
+    "contactNumber": "555-987-6543",
+    "location": {
+        "streetLine": "789 Oak St",
+        "cityTown": "San Francisco",
+        "stateRegion": "CA",
+        "zipPostal": "94107"
+    },
+    "verifiedStatus": true
+}
