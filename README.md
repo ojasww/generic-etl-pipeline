@@ -2,8 +2,7 @@
 
 This repository contains solution that solves the following problem:
 
-Given a set of input files which contain JSOn data of same template with different key-valu pairs and a schema JSON whicn
-represent the final format, convert each input file into an output file. The key mappings are provided in another mapping.json file.
+> Given a set of input files which contain JSON data of same template with different key-valu pairs and a schema JSON which represent the final format, convert each input file into an output file. The key mappings are provided in another JSON file.
 
 This is a typical example of an **ETL - Extract Transform and Load** pipeline. Data pipelining from different data sources, be it a data warehouse or a data lake, need to be refined and transformed before storing it in a standardized format. This problem is a simpler version of exactly this.
 
